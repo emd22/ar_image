@@ -1,0 +1,1 @@
+/usr/bin/cc   -m64  CMakeFiles/f3d-img.dir/f3d-img/f3dimg.c.o  -o f3d-img  -lm /home/ethan/Projects/f3d-img/src/../lib/libpng.a /home/ethan/Projects/f3d-img/src/../lib/libturbojpeg.a -lz 
