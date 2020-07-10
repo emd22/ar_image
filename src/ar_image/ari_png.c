@@ -1,33 +1,14 @@
+#include <ar_image/ari_png.h>
+#include <ar_image/ar_image.h>
+
+typedef int blah_t;
+
+#if 0
 #include <libpng/png.h>
-#include <libjpeg-turbo/turbojpeg.h>
 
 #include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include <string.h>
 
 #define PNG_BYTES_TO_CHECK 4
-
-enum {
-    F3DI_TYPE_NONE,
-    F3DI_TYPE_PNG,
-    F3DI_TYPE_JPEG,
-};
-
-typedef struct {
-    png_structp png_read_struct;
-    png_infop png_info_struct;
-    png_bytep *png_rows;
-    
-    uint32_t width; // image width
-    uint32_t height; // image height
-    uint32_t bit_depth; // bits per channel
-    uint32_t channels; // number of channels
-    uint32_t color_type; // colour type (RGB, palette, etc.)
-    
-    uint8_t *data;
-} f3di_image_t;
 
 bool check_if_png(FILE *fp) {
    uint8_t buf[PNG_BYTES_TO_CHECK];
@@ -65,7 +46,7 @@ void read_png_expand_to_rgb(f3di_image_t *image) {
     png_read_update_info(image->png_read_struct, image->png_info_struct);
 }
 
-void read_png_info(f3di_image_t *image) {
+static void read_png_info(ari_image_t *image) {
     image->width  = png_get_image_width(image->png_read_struct, image->png_info_struct);
     image->height = png_get_image_height(image->png_read_struct, image->png_info_struct);
     image->bit_depth = png_get_bit_depth(image->png_read_struct, image->png_info_struct);
@@ -73,8 +54,8 @@ void read_png_info(f3di_image_t *image) {
     image->color_type = png_get_color_type(image->png_read_struct, image->png_info_struct);
 }
 
-f3di_image_t read_png(FILE *fp, int sig_read) {
-    f3di_image_t image;
+ari_image_t ari_png_load(FILE *fp, int sig_read) {
+    ari_image_t image;
     memset(&image, 0, sizeof(f3di_image_t));
     image.png_read_struct = png_create_read_struct(PNG_LIBPNG_VER_STRING, NULL, NULL, NULL);
     
@@ -118,22 +99,4 @@ f3di_image_t read_png(FILE *fp, int sig_read) {
     png_read_image(image.png_read_struct, image.png_rows);
     return image;
 }
-
-int f3di_check_type(FILE *fp) {
-    if (check_if_png(fp))
-        return F3DI_TYPE_PNG;
-    return F3DI_TYPE_NONE;
-}
-
-int main() {
-    FILE *fp = fopen("../test.png", "rb");
-    if (fp == NULL) {
-        printf("could not load image\n");
-        return 1;
-    }
-    f3di_image_t image;
-    image = read_png(fp, 0);
-    printf("image.width = %d\nimage.height = %d\nimage.bit_depth = %d\nimage.channels = %d\n", image.width, image.height, image.bit_depth, image.channels);
-    
-    return 0;
-}
+#endif

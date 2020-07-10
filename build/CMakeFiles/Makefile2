@@ -73,7 +73,7 @@ CMAKE_BINARY_DIR = /home/ethan/Projects/f3d-img/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/f3d-img.dir/all
+all: CMakeFiles/ar_image.dir/all
 
 .PHONY : all
 
@@ -83,36 +83,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/f3d-img.dir/clean
+clean: CMakeFiles/ar_image.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/f3d-img.dir
+# Target rules for target CMakeFiles/ar_image.dir
 
 # All Build rule for target.
-CMakeFiles/f3d-img.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/f3d-img.dir/build.make CMakeFiles/f3d-img.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/f3d-img.dir/build.make CMakeFiles/f3d-img.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=1,2 "Built target f3d-img"
-.PHONY : CMakeFiles/f3d-img.dir/all
+CMakeFiles/ar_image.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=1,2,3,4 "Built target ar_image"
+.PHONY : CMakeFiles/ar_image.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/f3d-img.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/f3d-img/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/f3d-img.dir/all
+CMakeFiles/ar_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/f3d-img/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ar_image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/f3d-img/build/CMakeFiles 0
-.PHONY : CMakeFiles/f3d-img.dir/rule
+.PHONY : CMakeFiles/ar_image.dir/rule
 
 # Convenience name for target.
-f3d-img: CMakeFiles/f3d-img.dir/rule
+ar_image: CMakeFiles/ar_image.dir/rule
 
-.PHONY : f3d-img
+.PHONY : ar_image
 
 # clean rule for target.
-CMakeFiles/f3d-img.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/f3d-img.dir/build.make CMakeFiles/f3d-img.dir/clean
-.PHONY : CMakeFiles/f3d-img.dir/clean
+CMakeFiles/ar_image.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/clean
+.PHONY : CMakeFiles/ar_image.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -131,44 +131,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named f3d-img
+# Target rules for targets named ar_image
 
 # Build rule for target.
-f3d-img: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 f3d-img
-.PHONY : f3d-img
+ar_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ar_image
+.PHONY : ar_image
 
 # fast build rule for target.
-f3d-img/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/f3d-img.dir/build.make CMakeFiles/f3d-img.dir/build
-.PHONY : f3d-img/fast
+ar_image/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/build
+.PHONY : ar_image/fast
 
-f3d-img/f3dimg.o: f3d-img/f3dimg.c.o
+ar_image/ar_image.o: ar_image/ar_image.c.o
 
-.PHONY : f3d-img/f3dimg.o
+.PHONY : ar_image/ar_image.o
 
 # target to build an object file
-f3d-img/f3dimg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/f3d-img.dir/build.make CMakeFiles/f3d-img.dir/f3d-img/f3dimg.c.o
-.PHONY : f3d-img/f3dimg.c.o
+ar_image/ar_image.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ar_image.c.o
+.PHONY : ar_image/ar_image.c.o
 
-f3d-img/f3dimg.i: f3d-img/f3dimg.c.i
+ar_image/ar_image.i: ar_image/ar_image.c.i
 
-.PHONY : f3d-img/f3dimg.i
+.PHONY : ar_image/ar_image.i
 
 # target to preprocess a source file
-f3d-img/f3dimg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/f3d-img.dir/build.make CMakeFiles/f3d-img.dir/f3d-img/f3dimg.c.i
-.PHONY : f3d-img/f3dimg.c.i
+ar_image/ar_image.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ar_image.c.i
+.PHONY : ar_image/ar_image.c.i
 
-f3d-img/f3dimg.s: f3d-img/f3dimg.c.s
+ar_image/ar_image.s: ar_image/ar_image.c.s
 
-.PHONY : f3d-img/f3dimg.s
+.PHONY : ar_image/ar_image.s
 
 # target to generate assembly for a file
-f3d-img/f3dimg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/f3d-img.dir/build.make CMakeFiles/f3d-img.dir/f3d-img/f3dimg.c.s
-.PHONY : f3d-img/f3dimg.c.s
+ar_image/ar_image.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ar_image.c.s
+.PHONY : ar_image/ar_image.c.s
+
+ar_image/ari_jpeg.o: ar_image/ari_jpeg.c.o
+
+.PHONY : ar_image/ari_jpeg.o
+
+# target to build an object file
+ar_image/ari_jpeg.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o
+.PHONY : ar_image/ari_jpeg.c.o
+
+ar_image/ari_jpeg.i: ar_image/ari_jpeg.c.i
+
+.PHONY : ar_image/ari_jpeg.i
+
+# target to preprocess a source file
+ar_image/ari_jpeg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.i
+.PHONY : ar_image/ari_jpeg.c.i
+
+ar_image/ari_jpeg.s: ar_image/ari_jpeg.c.s
+
+.PHONY : ar_image/ari_jpeg.s
+
+# target to generate assembly for a file
+ar_image/ari_jpeg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.s
+.PHONY : ar_image/ari_jpeg.c.s
+
+ar_image/ari_png.o: ar_image/ari_png.c.o
+
+.PHONY : ar_image/ari_png.o
+
+# target to build an object file
+ar_image/ari_png.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ari_png.c.o
+.PHONY : ar_image/ari_png.c.o
+
+ar_image/ari_png.i: ar_image/ari_png.c.i
+
+.PHONY : ar_image/ari_png.i
+
+# target to preprocess a source file
+ar_image/ari_png.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ari_png.c.i
+.PHONY : ar_image/ari_png.c.i
+
+ar_image/ari_png.s: ar_image/ari_png.c.s
+
+.PHONY : ar_image/ari_png.s
+
+# target to generate assembly for a file
+ar_image/ari_png.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ari_png.c.s
+.PHONY : ar_image/ari_png.c.s
 
 # Help Target
 help:
@@ -178,10 +232,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... f3d-img"
-	@echo "... f3d-img/f3dimg.o"
-	@echo "... f3d-img/f3dimg.i"
-	@echo "... f3d-img/f3dimg.s"
+	@echo "... ar_image"
+	@echo "... ar_image/ar_image.o"
+	@echo "... ar_image/ar_image.i"
+	@echo "... ar_image/ar_image.s"
+	@echo "... ar_image/ari_jpeg.o"
+	@echo "... ar_image/ari_jpeg.i"
+	@echo "... ar_image/ari_jpeg.s"
+	@echo "... ar_image/ari_png.o"
+	@echo "... ar_image/ari_png.i"
+	@echo "... ar_image/ari_png.s"
 .PHONY : help
 
 

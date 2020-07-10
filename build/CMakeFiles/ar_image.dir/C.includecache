@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ethan/Projects/f3d-img/include/ar_image/ari_def.h
+stdint.h
+-
+
+/home/ethan/Projects/f3d-img/include/ar_image/ari_jpeg.h
+stdio.h
+-
+ar_image/ari_def.h
+-
+
+/home/ethan/Projects/f3d-img/src/ar_image/ar_image.c
+ar_image/ari_jpeg.h
+-
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+stdint.h
+-
+string.h
+-
+

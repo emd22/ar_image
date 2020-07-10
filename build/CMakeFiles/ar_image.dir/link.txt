@@ -1,0 +1,1 @@
+/usr/bin/cc   -m64  CMakeFiles/ar_image.dir/ar_image/ar_image.c.o CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o CMakeFiles/ar_image.dir/ar_image/ari_png.c.o  -o ar_image  -lm /home/ethan/Projects/f3d-img/src/../lib/libpng.a /home/ethan/Projects/f3d-img/src/../lib/libturbojpeg.a -lz 
