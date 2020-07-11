@@ -7,11 +7,10 @@
 
 typedef struct {
     int width, height, pitch;
-    int pixel_size;
+    int channels;
     ari_pixel_format_t pixel_format;
     
     uint8_t *data;
-    unsigned long data_size;
 } ari_jpeg_t;
 
 ari_error_t ari_jpeg_save(FILE *outfp, ari_jpeg_t *jpeg, ari_pixel_format_t pfmt, int subsamp, int quality, int flags);

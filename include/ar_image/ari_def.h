@@ -10,10 +10,12 @@ typedef enum {
     ARI_ALLOC_ERROR,
     ARI_READ_ERROR,
     ARI_WRITE_ERROR,
+    ARI_SIGNATURE_ERROR,
 } ari_error_t;
 
 typedef enum {
-    ARI_UNKNOWN = -1,
+    ARI_UNSUPPORTED = -2,
+    ARI_UNKNOWN     = -1,
     ARI_RGB = 0,
     ARI_BGR,
     ARI_RGBX,
@@ -27,13 +29,15 @@ typedef enum {
     ARI_ARGB,
     ARI_CMYK,
     
+    
     ARI_PF_AMT,
 } ari_pixel_format_t;
 
 typedef enum {
-    ARI_TYPE_NONE,
+    ARI_TYPE_AUTO,
     ARI_TYPE_PNG,
     ARI_TYPE_JPEG,
+    ARI_TYPE_UNKNOWN,
 } ari_image_type_t;
 
 typedef enum {

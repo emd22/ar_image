@@ -224,6 +224,33 @@ ar_image/ari_png.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ari_png.c.s
 .PHONY : ar_image/ari_png.c.s
 
+home/ethan/Projects/f3d-img/lib/libspng/spng.o: home/ethan/Projects/f3d-img/lib/libspng/spng.c.o
+
+.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.o
+
+# target to build an object file
+home/ethan/Projects/f3d-img/lib/libspng/spng.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.o
+.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.c.o
+
+home/ethan/Projects/f3d-img/lib/libspng/spng.i: home/ethan/Projects/f3d-img/lib/libspng/spng.c.i
+
+.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.i
+
+# target to preprocess a source file
+home/ethan/Projects/f3d-img/lib/libspng/spng.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.i
+.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.c.i
+
+home/ethan/Projects/f3d-img/lib/libspng/spng.s: home/ethan/Projects/f3d-img/lib/libspng/spng.c.s
+
+.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.s
+
+# target to generate assembly for a file
+home/ethan/Projects/f3d-img/lib/libspng/spng.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.s
+.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,6 +269,9 @@ help:
 	@echo "... ar_image/ari_png.o"
 	@echo "... ar_image/ari_png.i"
 	@echo "... ar_image/ari_png.s"
+	@echo "... home/ethan/Projects/f3d-img/lib/libspng/spng.o"
+	@echo "... home/ethan/Projects/f3d-img/lib/libspng/spng.i"
+	@echo "... home/ethan/Projects/f3d-img/lib/libspng/spng.s"
 .PHONY : help
 
 

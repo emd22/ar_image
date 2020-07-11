@@ -94,12 +94,12 @@ clean: CMakeFiles/ar_image.dir/clean
 CMakeFiles/ar_image.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=1,2,3,4 "Built target ar_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target ar_image"
 .PHONY : CMakeFiles/ar_image.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ar_image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/f3d-img/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/f3d-img/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ar_image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/f3d-img/build/CMakeFiles 0
 .PHONY : CMakeFiles/ar_image.dir/rule

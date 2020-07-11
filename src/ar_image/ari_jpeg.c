@@ -29,12 +29,11 @@ ari_error_t ari_jpeg_load(FILE *fp, ari_jpeg_t *jpeg, ari_pixel_format_t pfmt) {
     
     printf("Colourspace: %d\n", in_colourspace);
     
-    jpeg->pixel_size = tjPixelSize[pfmt];
-    jpeg->data = tjAlloc(jpeg->width * jpeg->height * jpeg->pixel_size);
+    jpeg->channels = tjPixelSize[pfmt];
+    jpeg->data = tjAlloc(jpeg->width * jpeg->height * jpeg->channels);
     jpeg->pitch = 0;
     
     tjDecompress2(tj_instance, jpegbuf, jpeg_size, jpeg->data, jpeg->width, 0, jpeg->height, pfmt, 0);
-    jpeg->data_size = jpeg_size;
     
     tjFree(jpegbuf);
     tjDestroy(tj_instance);

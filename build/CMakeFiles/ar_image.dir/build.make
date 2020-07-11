@@ -77,9 +77,22 @@ include CMakeFiles/ar_image.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ar_image.dir/flags.make
 
+CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.o: CMakeFiles/ar_image.dir/flags.make
+CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.o: /home/ethan/Projects/f3d-img/lib/libspng/spng.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.o   -c /home/ethan/Projects/f3d-img/lib/libspng/spng.c
+
+CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ethan/Projects/f3d-img/lib/libspng/spng.c > CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.i
+
+CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ethan/Projects/f3d-img/lib/libspng/spng.c -o CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.s
+
 CMakeFiles/ar_image.dir/ar_image/ar_image.c.o: CMakeFiles/ar_image.dir/flags.make
 CMakeFiles/ar_image.dir/ar_image/ar_image.c.o: /home/ethan/Projects/f3d-img/src/ar_image/ar_image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ar_image.dir/ar_image/ar_image.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ar_image.dir/ar_image/ar_image.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ar_image.dir/ar_image/ar_image.c.o   -c /home/ethan/Projects/f3d-img/src/ar_image/ar_image.c
 
 CMakeFiles/ar_image.dir/ar_image/ar_image.c.i: cmake_force
@@ -92,7 +105,7 @@ CMakeFiles/ar_image.dir/ar_image/ar_image.c.s: cmake_force
 
 CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o: CMakeFiles/ar_image.dir/flags.make
 CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o: /home/ethan/Projects/f3d-img/src/ar_image/ari_jpeg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o   -c /home/ethan/Projects/f3d-img/src/ar_image/ari_jpeg.c
 
 CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.i: cmake_force
@@ -105,7 +118,7 @@ CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.s: cmake_force
 
 CMakeFiles/ar_image.dir/ar_image/ari_png.c.o: CMakeFiles/ar_image.dir/flags.make
 CMakeFiles/ar_image.dir/ar_image/ari_png.c.o: /home/ethan/Projects/f3d-img/src/ar_image/ari_png.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ar_image.dir/ar_image/ari_png.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ar_image.dir/ar_image/ari_png.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ar_image.dir/ar_image/ari_png.c.o   -c /home/ethan/Projects/f3d-img/src/ar_image/ari_png.c
 
 CMakeFiles/ar_image.dir/ar_image/ari_png.c.i: cmake_force
@@ -118,6 +131,7 @@ CMakeFiles/ar_image.dir/ar_image/ari_png.c.s: cmake_force
 
 # Object files for target ar_image
 ar_image_OBJECTS = \
+"CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.o" \
 "CMakeFiles/ar_image.dir/ar_image/ar_image.c.o" \
 "CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o" \
 "CMakeFiles/ar_image.dir/ar_image/ari_png.c.o"
@@ -125,14 +139,14 @@ ar_image_OBJECTS = \
 # External object files for target ar_image
 ar_image_EXTERNAL_OBJECTS =
 
+ar_image: CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.o
 ar_image: CMakeFiles/ar_image.dir/ar_image/ar_image.c.o
 ar_image: CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o
 ar_image: CMakeFiles/ar_image.dir/ar_image/ari_png.c.o
 ar_image: CMakeFiles/ar_image.dir/build.make
-ar_image: /home/ethan/Projects/f3d-img/src/../lib/libpng.a
 ar_image: /home/ethan/Projects/f3d-img/src/../lib/libturbojpeg.a
 ar_image: CMakeFiles/ar_image.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ar_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/Projects/f3d-img/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ar_image"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ar_image.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
