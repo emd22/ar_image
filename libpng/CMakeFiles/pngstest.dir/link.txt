@@ -1,1 +1,0 @@
-/usr/bin/cc   -rdynamic CMakeFiles/pngstest.dir/contrib/libtests/pngstest.c.o  -o pngstest  -Wl,-rpath,/home/ethan/Projects/f3d-img/libpng libpng16.so.16.37.0 -lz -lm 

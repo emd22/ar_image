@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG  -rdynamic CMakeFiles/tjexample.dir/tjexample.c.o  -o tjexample  -Wl,-rpath,/home/ethan/Projects/f3d-img/libjpeg-turbo/build libturbojpeg.so.0.2.0 
