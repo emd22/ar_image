@@ -192,6 +192,9 @@ LIBPNG_LIBRARY:FILEPATH=/home/ethan/Projects/f3d-img/lib/libpng.a
 //Value Computed by CMake
 ar_image_BINARY_DIR:STATIC=/home/ethan/Projects/f3d-img/build
 
+//Dependencies for the target
+ar_image_LIB_DEPENDS:STATIC=general;m;general;/home/ethan/Projects/f3d-img/src/../lib/libturbojpeg.a;general;z;
+
 //Value Computed by CMake
 ar_image_SOURCE_DIR:STATIC=/home/ethan/Projects/f3d-img/src
 
@@ -217,7 +220,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=17
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.

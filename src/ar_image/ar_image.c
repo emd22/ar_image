@@ -42,7 +42,7 @@ static ari_image_type_t get_type(char *path) {
     return ARI_TYPE_UNKNOWN;
 } 
 
-ari_error_t ar_image_load(const char *path, ari_image_t *image, ari_image_type_t type) {
+ari_error_t ar_image_load(const char *path, ari_image_t *image, ari_image_type_t type, ari_pixel_format_t pfmt) {
     if (type == ARI_TYPE_AUTO)
         type = get_type((char *)path);
 
@@ -56,7 +56,7 @@ ari_error_t ar_image_load(const char *path, ari_image_t *image, ari_image_type_t
     if (type == ARI_TYPE_JPEG) {
         ari_jpeg_t jpeg;
         ari_error_t err;
-        err = ari_jpeg_load(fp, &jpeg, ARI_RGBA);
+        err = ari_jpeg_load(fp, &jpeg, pfmt);
         if (err) {
             fclose(fp);
             return err;
@@ -69,7 +69,7 @@ ari_error_t ar_image_load(const char *path, ari_image_t *image, ari_image_type_t
     else if (type == ARI_TYPE_PNG) {
         ari_png_t png;
         ari_error_t err;
-        err = ari_png_load(fp, &png, ARI_RGBA);
+        err = ari_png_load(fp, &png, pfmt);
         if (err) {
             fclose(fp);
             return err;
@@ -88,6 +88,7 @@ void ar_image_destroy(ari_image_t *image) {
     image->pixel_format = ARI_UNKNOWN;
 }
 
+/*
 int main() {
     const char *typestr[] = {"Auto", "JPEG", "PNG"};
     ari_image_t image;
@@ -97,3 +98,4 @@ int main() {
     
     return 0;
 }
+*/

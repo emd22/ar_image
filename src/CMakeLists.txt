@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 set(BUILD_NAME ar_image)
+set(BUILD_VERSION 1.0)
 
 project(${BUILD_NAME} C)
 
@@ -18,6 +19,9 @@ include_directories(
 
 set(LIBRARY_DIR ${CMAKE_SOURCE_DIR}/../lib)
 
-add_executable(${BUILD_NAME} ${SOURCES} ${HEADERS})
+#add_executable(${BUILD_NAME} ${SOURCES} ${HEADERS})
+add_library(${BUILD_NAME} ${SOURCES} ${HEADERS})
+set_target_properties(${BUILD_NAME} PROPERTIES VERSION ${BUILD_VERSION})
+
 target_link_libraries(${BUILD_NAME} m ${LIBRARY_DIR}/libturbojpeg.a z)
-set_target_properties(${BUILD_NAME} PROPERTIES COMPILE_FLAGS ${C_FLAGS} LINK_FLAGS ${LINKER_FLAGS})
+#set_target_properties(${BUILD_NAME} PROPERTIES COMPILE_FLAGS ${C_FLAGS} LINK_FLAGS ${LINKER_FLAGS})

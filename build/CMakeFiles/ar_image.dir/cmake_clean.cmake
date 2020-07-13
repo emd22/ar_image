@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ar_image.dir/ar_image/ari_jpeg.c.o"
   "CMakeFiles/ar_image.dir/ar_image/ari_png.c.o"
   "CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.o"
-  "ar_image"
-  "ar_image.pdb"
+  "libar_image.a"
+  "libar_image.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
