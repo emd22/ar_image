@@ -1,1 +1,0 @@
-/usr/bin/cc   -m64  CMakeFiles/f3dimg.dir/f3dimg/f3dimg.c.o CMakeFiles/f3dimg.dir/f3dimg/img_png.c.o  -o f3dimg  -lm /home/ethan/Projects/f3d-img/src/../lib/libpng.a /home/ethan/Projects/f3d-img/src/../lib/libturbojpeg.a -lz 

@@ -68,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/Projects/f3d-img/src
+CMAKE_SOURCE_DIR = /home/ethan/Projects/ar_image/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/Projects/f3d-img/build
+CMAKE_BINARY_DIR = /home/ethan/Projects/ar_image/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/f3d-img/build/CMakeFiles /home/ethan/Projects/f3d-img/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/ar_image/build/CMakeFiles /home/ethan/Projects/ar_image/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/f3d-img/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/Projects/ar_image/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -224,32 +224,32 @@ ar_image/ari_png.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/ar_image/ari_png.c.s
 .PHONY : ar_image/ari_png.c.s
 
-home/ethan/Projects/f3d-img/lib/libspng/spng.o: home/ethan/Projects/f3d-img/lib/libspng/spng.c.o
+home/ethan/Projects/ar_image/lib/libspng/spng.o: home/ethan/Projects/ar_image/lib/libspng/spng.c.o
 
-.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.o
+.PHONY : home/ethan/Projects/ar_image/lib/libspng/spng.o
 
 # target to build an object file
-home/ethan/Projects/f3d-img/lib/libspng/spng.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.o
-.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.c.o
+home/ethan/Projects/ar_image/lib/libspng/spng.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/home/ethan/Projects/ar_image/lib/libspng/spng.c.o
+.PHONY : home/ethan/Projects/ar_image/lib/libspng/spng.c.o
 
-home/ethan/Projects/f3d-img/lib/libspng/spng.i: home/ethan/Projects/f3d-img/lib/libspng/spng.c.i
+home/ethan/Projects/ar_image/lib/libspng/spng.i: home/ethan/Projects/ar_image/lib/libspng/spng.c.i
 
-.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.i
+.PHONY : home/ethan/Projects/ar_image/lib/libspng/spng.i
 
 # target to preprocess a source file
-home/ethan/Projects/f3d-img/lib/libspng/spng.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.i
-.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.c.i
+home/ethan/Projects/ar_image/lib/libspng/spng.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/home/ethan/Projects/ar_image/lib/libspng/spng.c.i
+.PHONY : home/ethan/Projects/ar_image/lib/libspng/spng.c.i
 
-home/ethan/Projects/f3d-img/lib/libspng/spng.s: home/ethan/Projects/f3d-img/lib/libspng/spng.c.s
+home/ethan/Projects/ar_image/lib/libspng/spng.s: home/ethan/Projects/ar_image/lib/libspng/spng.c.s
 
-.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.s
+.PHONY : home/ethan/Projects/ar_image/lib/libspng/spng.s
 
 # target to generate assembly for a file
-home/ethan/Projects/f3d-img/lib/libspng/spng.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/home/ethan/Projects/f3d-img/lib/libspng/spng.c.s
-.PHONY : home/ethan/Projects/f3d-img/lib/libspng/spng.c.s
+home/ethan/Projects/ar_image/lib/libspng/spng.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ar_image.dir/build.make CMakeFiles/ar_image.dir/home/ethan/Projects/ar_image/lib/libspng/spng.c.s
+.PHONY : home/ethan/Projects/ar_image/lib/libspng/spng.c.s
 
 # Help Target
 help:
@@ -269,9 +269,9 @@ help:
 	@echo "... ar_image/ari_png.o"
 	@echo "... ar_image/ari_png.i"
 	@echo "... ar_image/ari_png.s"
-	@echo "... home/ethan/Projects/f3d-img/lib/libspng/spng.o"
-	@echo "... home/ethan/Projects/f3d-img/lib/libspng/spng.i"
-	@echo "... home/ethan/Projects/f3d-img/lib/libspng/spng.s"
+	@echo "... home/ethan/Projects/ar_image/lib/libspng/spng.o"
+	@echo "... home/ethan/Projects/ar_image/lib/libspng/spng.i"
+	@echo "... home/ethan/Projects/ar_image/lib/libspng/spng.s"
 .PHONY : help
 
 

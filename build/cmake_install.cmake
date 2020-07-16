@@ -1,4 +1,4 @@
-# Install script for directory: /home/ethan/Projects/f3d-img/src
+# Install script for directory: /home/ethan/Projects/ar_image/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ethan/Projects/f3d-img/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ethan/Projects/ar_image/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

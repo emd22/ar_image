@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/ethan/Projects/f3d-img/src/../include -I/home/ethan/Projects/f3d-img/src/../lib 
+C_INCLUDES = -I/home/ethan/Projects/ar_image/src/../include -I/home/ethan/Projects/ar_image/src/../lib 
 
